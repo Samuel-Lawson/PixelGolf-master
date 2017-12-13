@@ -1,0 +1,15 @@
+/* Inputs */
+label {
+  font-weight: 300;
+}
+
+input {
+  background-image: url('C:\Users\Sam\Desktop\PixelGolf-master\src\img\kenneth_bone.jpg');
+  border: 1px solid $turqoise;
+  border-radius: 4px;
+  padding: 8px 1em;
+}
+
+input[type="number"]{
+  margin-bottom: 1.25em;
+}

@@ -1,0 +1,48 @@
+{% set settings = settings | default({}) | merge({
+  "siteName"      : "Fallibroome Golf",
+  "siteDesc"      : "Front End Development",
+  "imgFolder"     : "assets/img",
+  "stylesFolder"  : "assets/styles",
+  "scriptsFolder" : "assets/scripts"
+}) %}
+
+<!doctype html>
+
+<html lang="en" class="no-js">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="description" content="{{ settings.siteDesc }}">
+    <title>{% if title is defined %}{{ title }} - {{ settings.siteName }}{% else %}{{ siteName }}{% endif %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-title" content="{{ settings.siteName }}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="icon" type="image/png" href="{{ settings.imgFolder }}/global/favicon--alt.png" sizes="32x32">
+    <link rel="stylesheet" href="{{ settings.stylesFolder }}/style.css">
+    <link rel="stylesheet" href="{{ settings.stylesFolder }}/styleguide.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Lora:400,400i,700" rel="stylesheet">
+
+  </head>
+
+  <body class="{% if bodyClass is defined %} {{ bodyClass }} {% endif %}">
+
+    {% include '../_includes/header.html' %}
+
+    <main role="main">
+      {% block content %}
+      {% endblock %}
+    </main>
+
+
+    {% include '../_includes/footer.html' %}
+
+    <script async src="{{ settings.scriptsFolder }}/bundle.js"></script>
+  </body>
+
+</html>
