@@ -1,0 +1,35 @@
+//  Use this to apply a fixed aspect ratio to an element
+//  For example @include aspect-ratio(16, 9);
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@mixin transition--1ms{
+  transition: all 0.1s ease-in-out;
+}
+
+@mixin transition--2ms{
+  transition: all 0.1s ease-in-out;
+}
+
+@mixin transition--4ms{
+  transition: all 0.4s ease-in-out;
+}
+
+
+@mixin box-shadow{
+  box-shadow: 0 8px 20px 1px rgba(0,0,0,0.1);
+}
