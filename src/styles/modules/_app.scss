@@ -2,15 +2,15 @@
 .canvas{
   position: relative;
   background: $olive;
-  height: random 400px;
-  width: random 400px;
+  height: random(200)+400+px;
+  width: random(200)+400+px;
   margin: 0 auto;
 }
 
 .ball {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: random(100)+10+px;
+  left: (100)+10+px;
   z-index: $z-ball;
   width: 14px;
   height: 14px;
@@ -22,8 +22,8 @@
 
 .hole{
   position: absolute;
-  top: 370px;
-  left: 370px;
+  top: random(200)+150+px;
+  left: random(200)+150+px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
