@@ -1,0 +1,23 @@
+{% extends './_layouts/master.html' %}
+
+{% set bodyClass = '' %}
+{% set url = '/' %}
+{% set title = 'Pixel Golf' %}
+
+{% block content %}
+
+  <div class="l-container l-pb2x">
+
+    {% include './_includes/controls.html' %}
+
+    <div class="canvas js-canvas">
+
+      <div class="ball"></div>
+      <div class="hole"></div>
+
+    </div>
+
+  </div>
+
+
+{% endblock %}
