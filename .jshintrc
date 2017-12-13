@@ -1,0 +1,18 @@
+{
+  "browser": true,
+  "jquery": true,
+  "node": true,
+  "esversion": 6,
+
+  "eqeqeq": true,
+  "indent": 2,
+  "latedef": true,
+  "multistr": true,
+  "newcap": true,
+  "quotmark": "single",
+  "strict": true,
+  "undef": true,
+  "unused": true,
+
+  "eqnull": true
+}

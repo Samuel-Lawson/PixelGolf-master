@@ -1,0 +1,43 @@
+/*
+* Create the following classes where the number is the scale
+* of ems, starting with a base of 1.25em.
+*
+* For example, l-pt2x is a padding top of 2.5em (1.25 * 2).
+*
+* results in:
+* .l-pt1x {
+*   padding-top: 1.25em;
+* }
+}
+*
+)
+*/
+@for $i from 1 through 5{
+  $em: 1.25 * $i;
+
+  .l-pt#{$i}x {
+    padding-top: #{$em}em;
+  }
+
+  .l-pb#{$i}x {
+    padding-bottom: #{$em}em;
+  }
+
+  .l-ptb#{$i}x {
+    padding-top: #{$em}em;
+    padding-bottom: #{$em}em;
+  }
+
+  .l-mt#{$i}x {
+    margin-top: #{$em}em;
+  }
+
+  .l-mb#{$i}x {
+    margin-bottom: #{$em}em;
+  }
+
+  .l-mtb#{$i}x {
+    margin-top: #{$em}em;
+    margin-bottom: #{$em}em;
+  }
+}

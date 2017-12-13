@@ -1,0 +1,43 @@
+.u-mobile-only{
+  display: initial;
+}
+
+.u-tablet-only{
+  display: none;
+}
+
+.u-tablet-up{
+  display: none;
+}
+
+.u-desktop-only{
+  display: none;
+}
+
+@media only screen and (min-width: $bp-tablet) {
+
+  .u-mobile-only{
+    display: none;
+  }
+
+  .u-tablet-only, .u-tablet-up {
+    display: initial;
+  }
+
+  .u-tablet-only--block, .u-tablet-up--block{
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: $bp-tablet) {
+
+  .u-tablet-only{
+    display: none;
+  }
+
+  .u-desktop-only{
+    display: initial;
+  }
+
+}

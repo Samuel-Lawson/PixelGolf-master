@@ -1,0 +1,22 @@
+.controls{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.controls label{
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.controls span {
+  @extend .button;
+}
+
+.controls input {
+  display: none;
+}
+
+.controls input:checked ~ span {
+  background: $olive;
+  border-color: $olive;
+}
