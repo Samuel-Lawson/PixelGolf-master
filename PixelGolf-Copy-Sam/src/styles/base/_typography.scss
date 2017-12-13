@@ -1,0 +1,52 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-weight: 900;
+  padding: 0 0 1.25em 0;
+  margin: 0;
+}
+
+
+h1 {
+  font-size: 48px;
+  padding: 1.25em 0;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 42px;
+}
+
+h3{
+  font-size: 36px;
+}
+
+h4{
+  font-size: 32px;
+}
+
+h5{
+  font-size: 28px;
+}
+
+h6{
+  font-size: 21px;
+}
+
+p{
+  font-weight: 400;
+  margin: 0;
+  padding: 0 0 1.25em 0;
+  font-family: $ff-body;
+}
+
+.ff-base{
+  font-family: $ff-base;
+}
+
+.ff-body{
+  font-family: $ff-body;
+}

@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $ff-base;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  color: $black;
+  -webkit-font-smoothing: antialiased;
+}
+
+main{
+  min-height: 100vh;
+}
+
+body.menu-is-active{
+  overflow: hidden;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+
+dd{
+  margin-bottom: 1.25em;
+}

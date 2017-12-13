@@ -1,0 +1,44 @@
+// dependency
+
+body{
+	background-image:
+	repeating-linear-gradient(lightgreen,green 10%, forestgreen 20%);
+	}
+// vars
+@import "vars/breakpoints";
+@import "vars/colours";
+@import "vars/typography";
+@import "vars/z-index";
+
+//  mixins
+@import "mixins/common";
+@import "mixins/sprites";
+
+// base
+@import "base/base";
+@import "base/flex";
+@import "base/grid";
+@import "base/spacing";
+@import "base/typography";
+
+// vendors
+@import "vendor/linear-icons";
+
+// elements
+@import "elements/buttons";
+@import "elements/footer";
+@import "elements/header";
+@import "elements/inputs";
+
+// modules
+@import "modules/app";
+@import "modules/controls";
+
+// templates
+
+//  utils
+@import "utility/responsive";
+@import "utility/text";
+
+
+// @import "pages/**/*";
